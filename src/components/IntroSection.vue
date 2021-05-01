@@ -27,6 +27,7 @@ export default {
         font-family: $raleway;
         font-weight: 600;
         font-size: 2rem;
+        letter-spacing: -1px;
     }
     .intro-details{
         max-width: 800px;

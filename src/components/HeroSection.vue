@@ -45,6 +45,7 @@ export default {
             font-weight: 700;
             margin-bottom: 25px;
             line-height: 1.2;
+            letter-spacing: -1px;
         }
         .hero-subheading{
             color: $darkBlue;

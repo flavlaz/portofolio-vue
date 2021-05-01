@@ -1,18 +1,12 @@
 <template>
-    <section id="skills">
+    <section id="skills" class="pb-30">
             <div class="item" v-for="skill in skills" v-bind:key="skill.id">
-                <div class="box upper-box">
-                    <h1 class="title"> {{ skill.title }} </h1>
-                    <span class="desc"> {{ skill.desc }} </span>
-                </div>
-                <div class="box middle-box">
-                    <h2> {{ skill.subtitle }} </h2>
-                    <span> {{ skill.subdesc }}</span>
-                </div>
-                <div class="box bottom-box">
-                    <h2> {{ skill.toolstitle }} </h2>
-                    <span> {{ skill.tools }}</span>
-                </div>
+                    <h1 class="title mb-35"> {{ skill.title }} </h1>
+                    <span class="desc mb-60"> {{ skill.desc }} </span>
+                    <h2 class="subtitle"> {{ skill.subtitle }} </h2>
+                    <span class="desc mb-60"> {{ skill.subdesc }}</span>
+                    <h2 class="subtitle"> {{ skill.toolstitle }} </h2>
+                    <span class="desc"> {{ skill.tools }}</span>
             </div>
     </section>
 </template>
@@ -62,18 +56,41 @@ export default {
     .item {
         flex:1;
         text-align: center;
-        padding: 30px 15px;
+        padding: 45px 25px;
         border:1px solid #DEDEDE;
         background-color:#ffffff;
-        .middle-box {
-            padding: 30px 15px;
-        }
         .title {
             font-family: $raleway;
-            font-size: 1.5rem;
+            font-size: 1.75rem;
             font-weight: bold;
             color:$darkBlue;
         }
+        .subtitle{
+            font-family: $raleway;
+            font-size: 1.375rem;
+            color: $lightBlue;
+            font-weight: 500;
+        }
+        .desc {
+            font-family: $poppins;
+            font-size: 1.125rem;
+        }
+        span {
+            display: block;
+        }
+        &:first-of-type{
+            border-top-left-radius:15px;
+            border-bottom-left-radius:15px;
+        }
+        &:last-of-type{
+            border-top-right-radius:15px;
+            border-bottom-right-radius:15px;
+        }
+    }
+}
+@media screen and(max-width:415px) {
+    #skills {
+        flex-direction: column;
     }
 }
 </style>
