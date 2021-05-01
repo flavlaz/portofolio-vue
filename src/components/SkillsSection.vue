@@ -59,6 +59,7 @@ export default {
         padding: 45px 25px;
         border:1px solid #DEDEDE;
         background-color:#ffffff;
+        transition: all .3s ease-in-out;
         .title {
             font-family: $raleway;
             font-size: 1.75rem;
@@ -85,6 +86,10 @@ export default {
         &:last-of-type{
             border-top-right-radius:15px;
             border-bottom-right-radius:15px;
+        }
+        &:hover{
+            border-color: $lightBlue;
+            box-shadow: 0px 5px 5px -4px rgba(0,0,0,0.75);
         }
     }
 }
