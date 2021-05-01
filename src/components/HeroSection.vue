@@ -1,8 +1,8 @@
 <template>
     <section id="hero" class="container">
         <div class="hero-content-wrapper">
-            <h1 class="hero-heading">Front End Developer with<br> an eye for Design</h1>
-            <span class="hero-subheading">I create simple yet beautiful websites and webapps</span>
+            <h1 class="hero-heading">I'm a Front End Developer</h1>
+            <span class="hero-subheading">I like to make the web good looking and easy to use</span>
         </div>
         <div class="hero-img-wrapper">
             <img src="../assets/hero-resized.png" alt="">

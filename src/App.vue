@@ -7,6 +7,7 @@
       <IntroSection></IntroSection>
       <div class="container">
         <SkillsSection></SkillsSection>
+        <ProjectsSection></ProjectsSection>
       </div>
   </div>
 </template>
@@ -16,6 +17,7 @@ import Navbar from './components/Navbar.vue'
 import HeroSection from './components/HeroSection.vue'
 import IntroSection from './components/IntroSection.vue'
 import SkillsSection from './components/SkillsSection.vue'
+import ProjectsSection from './components/ProjectsSection.vue'
 
 
 export default {
@@ -24,7 +26,8 @@ export default {
     Navbar,
     HeroSection,
     IntroSection,
-    SkillsSection
+    SkillsSection,
+    ProjectsSection
   }
 }
 </script>

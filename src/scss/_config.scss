@@ -14,6 +14,7 @@ body {
 }
 
 
+
 //fonts
 $raleway:'Raleway', sans-serif;
 $poppins:'Poppins', sans-serif;
@@ -23,6 +24,10 @@ $lightBlue: #059DC0;
 $darkBlue: #141C3A;
 
 //spacing
+.p-30 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
 .pb-30 {
     padding-bottom: 30px;
 }
@@ -31,4 +36,20 @@ $darkBlue: #141C3A;
 }
 .mb-60 {
     margin-bottom: 60px;
+}
+
+//helpers
+.title{
+    margin-top: 0;
+    font-family: $raleway;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    font-family: $poppins;
+    font-weight: 300;
+    line-height: 1.4;
 }
