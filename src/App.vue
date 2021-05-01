@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="outer-wrapper">
+      <div class="container">
+        <Navbar></Navbar>
+        <HeroSection></HeroSection>
+      </div>
+      <IntroSection></IntroSection>
+      <div class="container">
+        <SkillsSection></SkillsSection>
+      </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue'
+import HeroSection from './components/HeroSection.vue'
+import IntroSection from './components/IntroSection.vue'
+import SkillsSection from './components/SkillsSection.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Navbar,
+    HeroSection,
+    IntroSection,
+    SkillsSection
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+
 </style>

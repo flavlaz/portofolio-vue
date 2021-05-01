@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+//fonts
+$raleway:'Raleway', sans-serif;
+$poppins:'Poppins', sans-serif;
+
+//colors
+$lightBlue: #059DC0;
+$darkBlue: #141C3A;
